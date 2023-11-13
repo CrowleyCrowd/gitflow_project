@@ -6,10 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <title>Inicio</title>
+
+    <style>
+      /* Agrega estilos personalizados aquí */
+      body {
+        background-color: #f8f9fa;
+      }
+      
+      .sidebar {
+        background-color: #e9ecef;
+      }
+      
+      .card {
+        background-color: #ffffff;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <div class="row justify-content-center mt-5">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+              </li>
+              <!-- Agrega más elementos del sidebar según sea necesario -->
+            </ul>
+          </div>
+        </nav>
         <div class="col-md-6">
           <div class="card">
             <div class="card-body">
