@@ -6,20 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <title>Inicio</title>
+    <style>
+      body {
+        background-color: #f8f9fa; /* Fondo principal */
+      }
+
+      .sidebar {
+        background-color: #343a40; /* Fondo del sidebar */
+        color: #fff; /* Texto del sidebar */
+      }
+
+      .main-content {
+        background-color: #ffffff; /* Fondo del contenido principal */
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <div class="row justify-content-center mt-5">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h1 class="text-center">GitFlow</h1>
-              <div class="text-center mt-4">
-                <img src="https://github.com/fluidicon.png" alt="Git Logo" style="width: 150px;" />
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </ul>
+          </div>
+        </nav>
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 main-content">
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h1 class="text-center">Git Flow</h1>
+                    <!-- Nuevo div con el logo de Git -->
+                    <div class="text-center mt-4">
+                      <img src="https://github.com/fluidicon.png" alt="Git Logo" style="width: 150px;" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </main>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
